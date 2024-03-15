@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SeekOrScared : MonoBehaviour
 {
-    Rigidbody rigidbody; //declare a new rigidbody in our script to manipulate
+    Rigidbody rb; //declare a new rigidbody in our script to manipulate
     public Transform target; //declare a new public transform for our object to seek or run away from
 
     //public float so we can change it in the inspector ... positive values move toward the target, negative away
@@ -13,7 +13,7 @@ public class SeekOrScared : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        rigidbody = GetComponent<Rigidbody>(); //assign this rigidbody to the one attached to the same gameobject
+        rb = GetComponent<Rigidbody>(); //assign this rigidbody to the one attached to the same gameobject
     }
 
     // Fixed Update is called at standardized intervals
@@ -24,6 +24,9 @@ public class SeekOrScared : MonoBehaviour
         Vector3 targetOffset = target.position - transform.position;
         Vector3 targetDirection = Vector3.Normalize(targetOffset); //Vector3.Normalize will convert a regular Vector3 into a direction
         //we then use addforce on our rigidbody in the direction we just calculated and multiply it by our multiplier float
-        rigidbody.AddForce(targetDirection * forceMultiplier);
+        rb.AddForce(targetDirection * forceMultiplier);
+
+        //shorthand way of doing all of the above
+        //rb.AddForce(Vector3.Normalize(target.position - transform.position));
     }
 }

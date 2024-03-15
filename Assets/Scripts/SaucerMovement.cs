@@ -46,6 +46,6 @@ public class SaucerMovement : MonoBehaviour
     //and at least one of those objects has a rigidbody attached
 
     void OnCollisionEnter(Collision col){ //when running this, it will create a new Collision object that tracks all the information about the collision that just happened
-        Destroy(gameObject); //run the destroy method on the gameObject this script is attached to
+        //Destroy(gameObject); //run the destroy method on the gameObject this script is attached to
     }
 }
