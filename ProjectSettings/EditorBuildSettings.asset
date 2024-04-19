@@ -5,10 +5,34 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
+    path: Assets/Scenes/Week11 - UI.unity
+    guid: 848c9e409aea7db4a911d5f71a6eef7b
+  - enabled: 1
+    path: Assets/Scenes/Week1.unity
+    guid: fd3672374433fe648bb3ab18b18911c9
+  - enabled: 1
+    path: Assets/Scenes/Week2.unity
+    guid: f76e554b1c6e4554b8f64324b87b7889
+  - enabled: 1
+    path: Assets/Scenes/Week3.unity
+    guid: bda90bdb430f4b141855997a10e1b8c5
+  - enabled: 1
     path: Assets/Scenes/Week4.unity
     guid: e957bbeebde915744ac4d38e0869d54c
   - enabled: 1
+    path: Assets/Scenes/Week5 - Intro Physics Movement.unity
+    guid: bbbb69fb4846f704d8221d9605cd71d7
+  - enabled: 1
+    path: Assets/Scenes/Week6 - More Physics Movement.unity
+    guid: f858e4d303514b04fae52af7dd618d60
+  - enabled: 1
+    path: Assets/Scenes/Week7 - Raycasting.unity
+    guid: bb8a827d2a183294e89a68df79790582
+  - enabled: 1
     path: Assets/Scenes/Week8 - Character Controller and Animator Controller.unity
     guid: ff5e59169ba929848b3cc628f2ab2f0d
+  - enabled: 1
+    path: Assets/Scenes/Week10 - NavMesh.unity
+    guid: af4b7c8c866c3b34d879f4cf3de56732
   m_configObjects: {}
